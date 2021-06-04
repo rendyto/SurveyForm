@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <section class="survey-form">
+        <h1 id="title">Survey Keuangan Perusahaan</h1>
+        <p id="description">PT.Sumber Rezeki</p>
+        <!-- survey form -->
+        <div class="container">
+          <form action="" id="survey-form">
+            <div class="name">
+                <label for="name" id="name-label">Nama</label>
+                <input type="text" placeholder="Nama pegawai" id="name" required />
+            </div>
+            <div class="email">
+                <label for="email" id="email-label">Surel</label>
+                <input type="email" placeholder="Rendyto.dito@gmail.com" id="email" required />
+            </div>
+            <div class="number">
+                <label for="number" id="number-label">Nomor Karyawan</label>
+                <input type="number" min="0" max="100" placeholder="11120700000123" id="number" required>
+            </div>
+            <!-- dropdown -->
+                <div class="dropdown">
+                    <label for="fans">Divisi</label>
+                    <select name="fans" id="dropdown">
+                        <option value="army">Kepegawaian</option>
+                        <option value="cebong">Keuangan</option>
+                        <option value="kampret">Kesejahterahaan</option>
+                        <option value="kadrun">Pertanian</option>
+                      </select>
+                </div>
+                <!-- radio button -->
+                <div class="button">
+                    <label class="special" for="gender">Jenis Kelamin</label>
+                    <label for="gender">
+                        <input type="radio" name="gender" value="laki-laki">Laki-laki
+                    </label>
+                    <label for="gender">
+                        <input type="radio" name="gender" value="wanita">Wanita
+                    </label>
+                </div>
+                <!-- check box -->
+                <div class="check-box">
+                    <label class="special" for="kantor">Pilih Kantor</label>
+                    <label for="kantor">
+                        <input type="checkbox" value="pusat">Pusat
+                    </label>
+                    <label for="kantor">
+                        <input type="checkbox" value="cabang">Cabang
+                    </label>
+                </div>
+                <!-- textarea -->
+                <div class="text-area">
+                    <label for="sugestion">
+                    Masukan Untuk Pegawai
+                    </label>
+                   <textarea  
+                   name="sugestion" 
+                   id="sugestion"
+                   placeholder="Masukan"></textarea>
+                </div>
+                <!-- submit -->
+                <div class="submit">
+                    <button type="submit" id="submit">
+                     Daftar Sekarang   
+                    </button>
+                </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
